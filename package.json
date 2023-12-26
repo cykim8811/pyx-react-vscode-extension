@@ -12,6 +12,17 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "languages": [{
+      "id": "pyx",
+      "aliases": ["PyX", "pyx"],
+      "extensions": [".pyx"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pyx",
+      "scopeName": "source.pyx",
+      "path": "./syntaxes/PyX.tmLanguage.json"
+    }],
     "commands": [
       {
         "command": "pyx-react.helloWorld",
